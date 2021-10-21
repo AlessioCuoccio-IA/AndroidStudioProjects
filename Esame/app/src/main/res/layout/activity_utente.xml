@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jeans"
+    tools:context=".Activities.UtenteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nome"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="19dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:text="Nome"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/cognome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cognome"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="19dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:text="Cognome"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/eta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nome" />
+
+            <TextView
+                android:id="@+id/eta"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="19dp"
+                android:background="#FFFFFF"
+                android:text="Età"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/telefono"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cognome" />
+
+            <TextView
+                android:id="@+id/telefono"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="19dp"
+                android:background="#FFFFFF"
+                android:text="Telefono"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/sesso"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eta" />
+
+            <TextView
+                android:id="@+id/sesso"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="19dp"
+                android:background="#FFFFFF"
+                android:text="Sesso"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/telefono" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="19dp"
+                android:background="#FFFFFF"
+                android:text="email"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sesso" />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="19dp"
+                android:background="#FFFFFF"
+                android:text="Password"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/provincia"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <TextView
+                android:id="@+id/provincia"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="19dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:text="Provincia"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/nomeCitta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password" />
+
+            <TextView
+                android:id="@+id/nomeCitta"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="120dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:text="Città"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/provincia" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

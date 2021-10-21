@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">3 Activities</string>
+    <string name="article_title">article_title</string>
+    <string name="article_subtitle">article_subtitle</string>
+    <string name="article_text">article_text</string>
+    <string name="article_title1">article_title1</string>
+    <string name="article_subtitle1">article_subtitle1</string>
+    <string name="article_text1">article_text1</string>
+    <string name="article_text2">article_text2</string>
+    <string name="article_text3">article_text3</string>
+</resources>

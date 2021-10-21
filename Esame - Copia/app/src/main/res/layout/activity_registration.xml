@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#205A88"
+    tools:context=".Activities.RegistrationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/nome"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Nome" />
+
+            <EditText
+                android:id="@+id/cognome"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Cognome" />
+
+            <EditText
+                android:id="@+id/eta"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="Età"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/telefono"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="Telefono"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/citta"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Città" />
+
+            <EditText
+                android:id="@+id/provincia"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:hint="Provincia" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/sessoM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="M" />
+
+                <RadioButton
+                    android:id="@+id/sessoF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="F" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="register"
+                android:text="Registra"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

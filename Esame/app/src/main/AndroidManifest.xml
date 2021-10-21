@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.esame">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_market"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_market_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Esame">
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.RegistrationActivity"
+            android:label = "Registrazione"
+            android:parentActivityName=".Activities.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.LoginActivity" />
+        </activity>
+        <activity android:name=".Activities.MainActivity"
+            android:label = "Main"
+            android:parentActivityName=".Activities.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.LoginActivity" />
+        </activity>
+        <activity android:name=".Activities.UtenteActivity"
+            android:label = "Dettagli utente"
+            android:parentActivityName=".Activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainActivity" />
+        </activity>
+        <activity android:name=".Activities.ProdottiActivity"
+            android:label = "Prodotti"
+            android:parentActivityName=".Activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
